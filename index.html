@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="esprimo.js"/>
+    <script src="esprimo.js"></script>
     <title>Números primos</title>
 </head>
 <body>
 <script>
     var num = prompt("Escribe un número:");
+    for (var i = 1; i <= num; i++){
+        if (num < 1){
+            document.write("Por favor, vuelva a introducir un valor superior o igual a 1.");
+        }
+    }
 </script>
 </body>
 </html>
