@@ -1,10 +1,10 @@
 function esprimo(num){
-    esprimo = true;
-    var x = 2;
-while ((x<num) && esprimo){
+    var primo = true;
+    var i = 2;
+while ((i<num) && esprimo){
     if(num%x == 0){
         esprimo = false;
-    x++;
+    i++;
     }
     return esprimo;
     }
