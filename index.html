@@ -4,29 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="esprimo.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <title>Números primos</title>
+    <link rel="stylesheet" type="text/css" href="esprimo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="esprimo.js"></script>
 </head>
 <body class="body">
-    <h1>Números primos</h1>
-    <table>
-    <script>
-        var num = prompt("Escribe un número:"); 
-        if (num < 1){
-            document.write("Por favor, vuelva a introducir un valor superior o igual a 1. <br>");
-        }
-        for (var i = 1; i <= num; i++){
-            if (esprimo(i)){
-                document.write(i+" es primo <br>");
-            } else {
-                document.write(i+" no es primo <br>");
+    <table class="table table-hover">
+        <h1>Números primos</h1>
+        <script>
+            var num = prompt("Escribe un número:"); 
+            if (num < 1){
+                document.write("Por favor, vuelva a introducir un valor superior o igual a 1.");
             }
-        }
-       
-    </script>
-    </table> 
-    <br>
-    <button type="button"><a href="index.html">Volver a introducir un número</a></button>
+            for (var i = 1; i <= num; i++){
+                if (esprimo(i)){
+                    document.write("<tr><td>"+i+" es primo <br>"+"</tr></td>");
+                }
+            } //Se ha quitado el "else" para que sólo aparezca el número primo.
+        </script>
+    </table>
+    <button type="button"><a href="index.html">Volver a introducir un número</a></button> 
 </body>
 </html>
